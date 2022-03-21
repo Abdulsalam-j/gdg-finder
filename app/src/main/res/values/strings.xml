@@ -34,8 +34,11 @@
     <string name="city_label">city</string>
     <string name="country_label">country</string>
     <string name="region_label">region</string>
-    <string name="enter_motivation">Please enter your motivation in 1-2 sentences</string>
+    <string name="enter_motivation">Please enter your motivation in 1–2 sentences</string>
     <string name="submitted">Submitted, no need to submit again</string>
     <string name="done">Done</string>
     <string name="submit">Submit</string>
+    <string name="ok">Ok</string>
+    <string name="group_picture_description">A gdg group picture</string>
+    <string name="fab_description">Go to the gdg list</string>
 </resources>
