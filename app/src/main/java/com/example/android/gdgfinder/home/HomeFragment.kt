@@ -12,10 +12,6 @@ import com.example.android.gdgfinder.databinding.HomeFragmentBinding
 
 class HomeFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = HomeFragment()
-    }
-
     private lateinit var binding: HomeFragmentBinding
 
     private lateinit var viewModel: HomeViewModel
