@@ -75,7 +75,9 @@ class GdgListFragment : Fragment() {
                 chipGroup.removeAllViews()
 
                 for (chip in children) {
-                    chipGroup.addView(chip)
+                    if(chip.text.isNotEmpty()){
+                        chipGroup.addView(chip)
+                    }
                 }
             }
         })
