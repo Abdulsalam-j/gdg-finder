@@ -15,7 +15,7 @@ import com.google.android.material.snackbar.Snackbar
 class AddGdgFragment : Fragment() {
 
     private val viewModel: AddGdgViewModel by lazy {
-        ViewModelProvider(this).get(AddGdgViewModel::class.java)
+        ViewModelProvider(this)[AddGdgViewModel::class.java]
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

@@ -9,7 +9,7 @@ import com.example.android.gdgfinder.network.GdgChapter
 import com.example.android.gdgfinder.search.GdgListAdapter.GdgListViewHolder
 import com.example.android.gdgfinder.databinding.ListItemBinding
 
-class GdgListAdapter(val clickListener: GdgClickListener): ListAdapter<GdgChapter, GdgListViewHolder>(DiffCallback){
+class GdgListAdapter(private val clickListener: GdgClickListener): ListAdapter<GdgChapter, GdgListViewHolder>(DiffCallback){
     companion object DiffCallback : DiffUtil.ItemCallback<GdgChapter>() {
         override fun areItemsTheSame(oldItem: GdgChapter, newItem: GdgChapter): Boolean {
             return oldItem === newItem
@@ -40,7 +40,7 @@ class GdgListAdapter(val clickListener: GdgClickListener): ListAdapter<GdgChapte
     }
 
     /**
-     * Part of the RecyclerView adapter, called when RecyclerView needs a new [ViewHolder].
+     * Part of the RecyclerView adapter, called when RecyclerView needs a new ViewHolder.
      *
      * A ViewHolder holds a view for the [RecyclerView] as well as providing additional information
      * to the RecyclerView such as where on the screen it was last drawn during scrolling.
